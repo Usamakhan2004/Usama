@@ -1,0 +1,38 @@
+.body-header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #0E4C97;
+    color: #fff;
+    justify-content: space-around;
+    z-index: 999;
+}
+.body-header div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.body-header div img{
+    width: 30px;
+    height: 30px;
+}
+.body-header div a{
+    color: #fff;
+}
+.body-header div a:hover{
+    color: blueviolet;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #131E3A;
+    margin-top: 100px;
+}

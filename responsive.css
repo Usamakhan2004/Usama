@@ -1,0 +1,219 @@
+@media (max-width: 952px){
+    .intro-container .intro-box p{
+        width: 300px;
+    }
+    .intro-container .image-box .image{
+        width: 250px;
+        height: 330px;
+    }
+    .intro-container .image-box .image-cover{
+        width: 260px;
+        height: 340px;
+    }
+    .top-boxes{
+        top: -75px;
+    }
+    
+}
+@media (max-width: 752px) {
+    .intro-container{
+        height: 900px;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        clip-path: none;
+    }
+    .intro-container .intro-box p{
+        width: 400px;
+    }
+    .intro-container .image-box{
+        z-index: 2;
+        margin-bottom: 50px;
+    }
+    #down-icon{
+        width: 20px;
+    }
+
+    .view-images .dialog-box{
+        width: 600px;
+        height: 300px;
+    }
+    .view-images .dialog-box .images .image img{
+        width: 170px;
+        height: 170px;
+    }
+    .view-images .dialog-box .images .image .image-shadow{
+        width: 170px;
+        height: 170px;
+    }
+
+    @keyframes movestart1 {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(400%, 100%);
+        }
+    }
+    @keyframes movestart2 {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(-400%, -200%);
+        }
+    }
+    @keyframes movestart3 {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(-500%, 400%);
+        }
+    }
+    @keyframes movestart4 {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(400%, -400%);
+        }
+    }
+}
+@media (max-width: 552px) {
+    .intro-container .intro-box h1{
+        font-size: 26px;
+    }
+    .intro-container .intro-box {
+        z-index: 2;
+    }
+    .intro-container .intro-box p{
+        width: 300px;
+    }
+    .intro-container .intro-box h2{
+        font-size: 18px;
+    }
+    .intro-container .image-box .image{
+        width: 250px;
+        height: 320px;
+    }
+    .intro-container .image-box .image-cover{
+        width: 260px;
+        height: 330px;
+    }
+    .project-section{
+        margin: 10px;
+    }
+    .skill-section .skill-box .skills .skill img{
+        width: 50px;
+    }
+    .view-images .dialog-box{
+        width: 400px;
+        height: 200px;
+    }
+    .view-images .dialog-box .images .image h2{
+        font-size: 14px;
+    }
+    .view-images .dialog-box .images .image img{
+        width: 100px;
+        height: 100px;
+    }
+    .view-images .dialog-box .images .image .image-shadow{
+        width: 0px;
+        height: 0px;
+    }
+    .view-images .dialog-box .images .image .image-shadow img{
+        display: none;
+    }
+    .intro-container span:nth-child(3){
+        right: -60px;
+        bottom: 40px;
+        z-index: 1;
+        animation: movestart2 60s linear infinite;
+    }
+    .intro-container span:nth-child(4){
+        left: -60px;
+        top: 40px;
+        z-index: 1;
+        animation: movestart1 60s linear infinite;
+    }
+    .intro-container span:nth-child(5){
+        top: -60px;
+        right: 0px;
+        z-index: 1;
+        animation: movestart3 70s linear infinite;
+    }
+    .intro-container span:nth-child(6){
+        left: 30px;
+        bottom: -60px;
+        z-index: 1;
+        animation: movestart4 60s linear infinite;
+    }
+    .home-menu-icon{
+        left: 85%;
+        top: 85%;
+    }
+    .top-boxes{
+        top: -30px;
+    }
+    .top-boxes .service-box{
+        width: 100px;
+        height: 100px;
+    }
+    .top-boxes .service-box img{
+        width: 40px;
+        height: 40px;
+    }
+    .top-boxes .service-box h2{
+        font-size: 16px;
+    }
+    @keyframes movestart1 {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(1500%, 1500%);
+        }
+    }
+    @keyframes movestart2 {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(-2000%, -2000%);
+        }
+    }
+    @keyframes movestart3 {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(-2500%, 4000%);
+        }
+    }
+    @keyframes movestart4 {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(1500%, -5000%);
+        }
+    }
+}
+@media (max-width: 400px) {
+    .intro-container .intro-box p{
+        width: 250px;
+    }
+    .view-images .dialog-box{
+        width: 300px;
+        height: 200px;
+    }
+    .view-images .dialog-box .images .image img{
+        width: 80px;
+        height: 80px;
+    }
+    .view-images .dialog-box .images .image .image-shadow{
+        width: 80px;
+        height: 80px;
+    }
+}
