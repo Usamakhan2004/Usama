@@ -1,4 +1,7 @@
 @media (max-width: 952px){
+     .intro-container{
+        padding-top: 90px;
+    }
     .intro-container .intro-box p{
         width: 300px;
     }
