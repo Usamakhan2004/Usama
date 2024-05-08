@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#root{
+    position: relative;
+    background-color: #36454F;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}   
+.back-btn-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    gap: 10px;
+}
+.back-btn-box img{
+    margin-left: 30px;cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.back-btn-box h3{
+    cursor: pointer;
+}
+.back-btn-box h3:hover{
+    color: blueviolet;
+}
+.blog-heading{
+    text-align: center;
+}
+.port-box{
+    padding-left: 30px;
+}
+.port-box p{
+    margin-right: 150px;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+}
+.port-box h2{
+    color: #FC0FC0;
+}
+.port-box img{
+    width: 500px;
+    height: 250px;
+}
+.port-video-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.port-video-box .port-video{
+    width: 700px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+}
+.more-project li .link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+ul{
+    line-height: 1.6;
+    font-size: 16px;
+}
+.more-project li .link:hover{
+    color: blueviolet;
+}
+.port-box .port-last-images{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
