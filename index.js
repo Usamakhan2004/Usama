@@ -35,11 +35,11 @@ function handleDropDown(){
 
 function handleDownClick(e){
     if(down){
-        e.target.src = "../assets/up.png";
+        e.target.src = "assets/up.png";
         skills.className = "skill-box show";
         down = false;
     }else{
-        e.target.src = "../assets/down.png";
+        e.target.src = "assets/down.png";
         skills.className = "skill-box hide";
         down = true;
     }
