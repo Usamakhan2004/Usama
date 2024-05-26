@@ -1,22 +1,24 @@
 @media (max-width: 952px){
-     .intro-container{
+    .intro-container{
         padding-top: 90px;
     }
     .intro-container .intro-box p{
         width: 300px;
     }
-    .intro-container .image-box .image{
-        width: 250px;
-        height: 330px;
-    }
-    .intro-container .image-box .image-cover{
-        width: 260px;
-        height: 340px;
-    }
     .top-boxes{
         top: -75px;
     }
-    
+    .services_section{
+        gap: 100px;
+        margin-bottom: 100px;
+        justify-content: center;
+    }
+    .skill-section .skill-box{
+        height: 700px;
+    }
+    .skill-section .skill-box .box-back-cover{
+        height: 550px;
+    }
 }
 @media (max-width: 752px) {
     .intro-container{
@@ -33,23 +35,39 @@
         z-index: 2;
         margin-bottom: 50px;
     }
+    .intro-container .image-box .cover-design{
+     left: -30px;   
+    }
     #down-icon{
         width: 20px;
     }
-
-    .view-images .dialog-box{
-        width: 600px;
-        height: 300px;
+    .services_section .service_images .service-images-cover{
+        width: 450px;
+        height: 400px;
     }
-    .view-images .dialog-box .images .image img{
-        width: 170px;
-        height: 170px;
+    .services_section .service_images{
+        position: relative;
+        display: flex;
+        justify-content: center;
     }
-    .view-images .dialog-box .images .image .image-shadow{
-        width: 170px;
-        height: 170px;
+    .services_section .service_images img{
+        width: 250px;
     }
-
+    .services_section .service_images img:nth-child(1){
+        top: -20px;
+        left: 20px;
+    }
+    .services_section .service_images img:nth-child(2){
+        left: 220px;
+    }
+    .services_section .service_images img:nth-child(3){
+        left: 20px;
+        top: 140px;
+    }
+    .services_section .service_images img:nth-child(4){
+        top: 180px;
+        left: 200px;
+    }
     @keyframes movestart1 {
         0% {
             transform: translate(0%, 0%);
@@ -102,32 +120,12 @@
     }
     .intro-container .image-box .image-cover{
         width: 260px;
-        height: 330px;
+        height: 290px;
+        left: -10px;
     }
     .project-section{
         margin: 10px;
-    }
-    .skill-section .skill-box .skills .skill img{
-        width: 50px;
-    }
-    .view-images .dialog-box{
-        width: 400px;
-        height: 200px;
-    }
-    .view-images .dialog-box .images .image h2{
-        font-size: 14px;
-    }
-    .view-images .dialog-box .images .image img{
-        width: 100px;
-        height: 100px;
-    }
-    .view-images .dialog-box .images .image .image-shadow{
-        width: 0px;
-        height: 0px;
-    }
-    .view-images .dialog-box .images .image .image-shadow img{
-        display: none;
-    }
+    }   
     .intro-container span:nth-child(3){
         right: -60px;
         bottom: 40px;
@@ -170,6 +168,38 @@
     .top-boxes .service-box h2{
         font-size: 16px;
     }
+    .services_section .service_images .service-images-cover{
+        width: 380px;
+        height: 320px;
+    }
+    .services_section .service_images img{
+        width: 200px;
+    }
+    .services_section .service_images img:nth-child(1){
+        left: 70px;
+    }
+    .services_section .service_images img:nth-child(2){
+        left: 240px;
+    }
+    .services_section .service_images img:nth-child(3){
+        left: 50px;
+        top: 120px;
+    }
+    .services_section .service_images img:nth-child(4){
+        top: 150px;
+        left: 220px;
+    }
+    .skill-section{
+        justify-content: start;
+        height: 1520px;
+    }
+    .skill-section .skill-box{
+        width: 350px;
+    }
+    .skill-section .skill-box .box-back-cover{
+        top: 100px;
+        height: 1420px;
+    }
     @keyframes movestart1 {
         0% {
             transform: translate(0%, 0%);
@@ -207,16 +237,34 @@
     .intro-container .intro-box p{
         width: 250px;
     }
-    .view-images .dialog-box{
-        width: 300px;
-        height: 200px;
+    .services_section{
+        margin-bottom: 0px;
     }
-    .view-images .dialog-box .images .image img{
-        width: 80px;
-        height: 80px;
+    .services_section .service_text p{
+        width: 250px;
     }
-    .view-images .dialog-box .images .image .image-shadow{
-        width: 80px;
-        height: 80px;
+    .services_section .service_text h1{
+        width: 250px;
+    }
+    .services_section .service_images .service-images-cover{
+        width: 280px;
+        height: 260px;
+    }
+    .services_section .service_images img{
+        width: 150px;
+    }
+    .services_section .service_images img:nth-child(1){
+        left: 50px;
+    }
+    .services_section .service_images img:nth-child(2){
+        left: 190px;
+    }
+    .services_section .service_images img:nth-child(3){
+        left: 50px;
+        top: 80px;
+    }
+    .services_section .service_images img:nth-child(4){
+        top: 110px;
+        left: 180px;
     }
 }
