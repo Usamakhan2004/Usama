@@ -2,8 +2,23 @@
     .port-box p{
         margin-right: 70px;
     }
+    .port-video-box .port-video{
+        width: 500px;
+        height: 200px;
+    }
 }
 @media (max-width: 752px) {
+    .blog-side-menu{
+        position: absolute;
+        margin-left: -300px;
+        z-index: 99;
+    }
+    #blog-resp-menu{
+        display: flex;
+    }
+    #resp-close{
+        display: flex;
+    }
     .port-video-box .port-video{
         width: 450px;
         height: 200px;

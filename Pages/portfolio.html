@@ -21,50 +21,86 @@
         </div>
     </header>
 
-    <div id="root">
-        <a href="../index.html" class="back-btn-box">
-            <img src="../assets/back.png" alt="back"/>
-            <h3>Home</h3>
-        </a>
-        <h1 class="blog-heading">Portfolio Website</h1>
-        <div class="port-video-box">
-            <iframe class="port-video" src="https://www.youtube.com/embed/aqPCSEnvjQs" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="port-box">
-            <p>I have created a personal portfolio website with JavaScript, HTML, and CSS that presents a person's significant bio. The website is made to effectively highlight background, projects, and skills.<br/><br/> The purpose of this portfolio website is to serve as a central venue for online workers, freelancers, and YouTubers to present their information and demonstrate their talents. Visitors can easily discover everything there is to know about the person in no time at all by simply clicking on the detailed information that is readily available. </p>
-            <h3>There are four pages</h3>
-            <ul>
-                <li>Home</li>
-                <li>Contact</li>
-                <li>About</li>
-                <li>Service</li>
-            </ul>
-            <h2>Home Page</h2>
-            <p>The homepage includes basic information such as a CV, bio, and the latest project that was completed. A slider containing feedback from clients could be located at the bottom of the main page.</p>
-            <img src="../assets/port.png" alt=""/>
-            <h2>Service Page</h2>
-            <p>You can find significant information regarding the services provided by the provider on this services page. To help new clients understand and have clarity, each service is described in great depth. This design makes it possible for users to peruse with convenience and discover the person providing the services, giving them the information they need to make intelligent choices.</p>
-            <img src="../assets/port4.png" alt=""/>
-            <h2>Contact and About page</h2>
-            <p>An <i>About</i> page and a <i>Contact</i> page are two more pages on the website. The company or individual is fully described on the <i>About</i> page, which also offers insights into their background and mission. A handy form to get in touch with the website owner or business may be found on the <i>Contact</i> page.</p>
-            <div class="port-last-images">
-                <img src="../assets/port2.png" alt=""/>
-                <img src="../assets/port3.png" alt=""/>
+    <div id="root">  
+        <div class="blog-body">
+            <div class="blog-side-menu" id="side-bar">
+                <img src="../assets/remove.png" alt="close" id="resp-close">
+                <div class="side-menu-items">
+                    <div class="menu-project-item" id="project-item">
+                        <h4>Web projects</h4>
+                        <img src="../assets/whitedown.png" alt="" id="project-item-icon"/>
+                    </div>
+                    <div class="side-menu-item1 menu-group1" id="side-menu-item1">
+                        <ul>
+                            <li class="active"><a href="portfolio.html">Portfolio website</a></li>
+                            <li><a href="conversion.html">Conversion Tool</a></li>
+                            <li><a href="game.html">Rock, Paper, scissors</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-project-item" id="other-item">
+                        <h4>Others project</h4>
+                        <img src="../assets/left.png" alt="" id="other-item-icon"/>
+                    </div>
+                    <div class="side-menu-item1 menu-group2" id="side-menu-item2">
+                        <ul>
+                            <li><a href="PointOfSale.html">Point of sale</a></li>
+                        </ul>
+                    </div>
+                </div>     
             </div>
-            <h3>More Projects</h3>
-            <ul class="more-project">
-                <li>
-                    <a class="link" href="conversion.html" >Conversion Tool</a>
-                </li>
-                <li>
-                    <a class="link" href="game.html" >Rock, Paper, Scissors Game</a>
-                </li>
-                <li>
-                    <a class="link" href="#" >Other</a>
-                </li>
-            </ul>
+            <div class="blog-content">
+                <a href="../index.html" class="back-btn-box">
+                    <img src="../assets/back.png" alt="back"/>
+                    <h3>Home</h3>
+                </a>
+                <h1 class="blog-heading">Portfolio Website</h1>
+                <div class="port-video-box">
+                    <iframe class="port-video" src="https://www.youtube.com/embed/aqPCSEnvjQs" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="port-box">
+                    <p>I have created a personal portfolio website with JavaScript, HTML, and CSS that presents a person's significant bio. The website is made to effectively highlight background, projects, and skills.<br/><br/> The purpose of this portfolio website is to serve as a central venue for online workers, freelancers, and YouTubers to present their information and demonstrate their talents. Visitors can easily discover everything there is to know about the person in no time at all by simply clicking on the detailed information that is readily available. </p>
+                    <h3>There are four pages</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>About</li>
+                        <li>Service</li>
+                    </ul>
+                    <h2>Home Page</h2>
+                    <p>The homepage includes basic information such as a CV, bio, and the latest project that was completed. A slider containing feedback from clients could be located at the bottom of the main page.</p>
+                    <div class="blog-image">
+                        <img src="../assets/port.png" alt=""/>
+                    </div>
+                    <h2>Service Page</h2>
+                    <p>You can find significant information regarding the services provided by the provider on this services page. To help new clients understand and have clarity, each service is described in great depth. This design makes it possible for users to peruse with convenience and discover the person providing the services, giving them the information they need to make intelligent choices.</p>
+                    <div class="blog-image">
+                        <img src="../assets/port4.png" alt=""/>
+                    </div>
+                    <h2>Contact and About page</h2>
+                    <p>An <i>About</i> page and a <i>Contact</i> page are two more pages on the website. The company or individual is fully described on the <i>About</i> page, which also offers insights into their background and mission. A handy form to get in touch with the website owner or business may be found on the <i>Contact</i> page.</p>
+                    <div class="port-last-images blog-image">
+                        <img src="../assets/port2.png" alt=""/>
+                        <img src="../assets/port3.png" alt=""/>
+                    </div>
+                    <h3>More Projects</h3>
+                    <ul class="more-project">
+                        <li>
+                            <a class="link" href="conversion.html" >Conversion Tool</a>
+                        </li>
+                        <li>
+                            <a class="link" href="game.html" >Rock, Paper, Scissors Game</a>
+                        </li>
+                        <li>
+                            <a class="link" href="PointOfSale.html" >Other</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="../assets//menu.png" alt="menu" id="blog-resp-menu">
         </div>
         <footer> Copyright ©2024 All rights reserved </footer>
     </div>
+
+    <script src="blog.js"></script>
 </body>
 </html>

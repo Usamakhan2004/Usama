@@ -9,7 +9,95 @@ body{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
-}   
+}
+.blog-body{
+    display: flex;
+    overflow: hidden;
+}
+
+/* Side Menu css */
+
+.blog-body .blog-side-menu{
+    width: 300px;
+    height: 100vh;
+    background-color: #2C3539;
+} 
+.blog-body .blog-side-menu .side-menu-items ul{
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.blog-body .blog-side-menu .side-menu-items .side-menu-item1{
+    width: 100%;
+    overflow: hidden;
+}
+.blog-body .blog-side-menu .side-menu-items .menu-group1{
+    height: 100px;
+}
+.blog-body .blog-side-menu .side-menu-items .menu-group2{
+    height: 0px;
+}
+.blog-body .blog-side-menu .side-menu-items ul li{
+    padding: 5px 0px 5px 0;
+    cursor: pointer;
+}
+.blog-body .blog-side-menu .side-menu-items ul li:hover{
+    background-color: rgba(252,15, 192, 0.5);
+}
+.active{
+    background-color: rgba(252,15, 192, 0.5);
+}
+.blog-body .blog-side-menu .side-menu-items ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 35px;
+}
+#blog-resp-menu{
+    position: fixed;
+    top: 45%;
+    left: 10px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+#resp-close{
+    position: absolute;
+    width: 20px;
+    right: 10px;
+    top: 5px;
+    display: none;
+}
+.menu-project-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.menu-project-item:hover{
+    background-color: rgba(252,15, 192, 0.5);
+}
+.menu-project-item h4{
+    margin: 10px 0px 10px 0px;
+}
+.menu-project-item img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Content Css */
+
+.blog-body .blog-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.blog-body .blog-content::-webkit-sliderbar{
+    display: none;
+} 
 .back-btn-box{
     display: flex;
     flex-direction: row;
@@ -78,4 +166,15 @@ ul{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+.blog-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 100px 0px 100px 0px;
+}
+.footer{
+    margin-top: 0px;
 }
