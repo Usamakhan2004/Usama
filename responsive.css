@@ -271,4 +271,13 @@
         top: 110px;
         left: 180px;
     }
+    .intro-container .intro-box .btns .dwn-btns-box{
+        width: 180px;
+        height: 150px;
+        left: 60px;
+    }
+    .intro-container .intro-box .btns .dwn-btns-box a{
+        width: 120px;
+        font-size: 14px;
+    }
 }
