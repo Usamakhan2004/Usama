@@ -173,7 +173,14 @@ ul{
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 100px 0px 100px 0px;
+    margin: 50px 0px 50px 0px;
+}
+.port-box ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.port-box ul li a:hover{
+    color: #FC0FC0;
 }
 .footer{
     margin-top: 0px;
