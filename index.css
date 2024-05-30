@@ -108,12 +108,55 @@ body{
     text-align: justify;
     line-height: 1.5;
 }
+.intro-container .intro-box .btns .dwn-btns-box{
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 110px;
+    top: -30px;
+    border-radius: 10px;
+    background-color: #fff;
+    visibility: hidden;
+    gap: 10px;
+}
+.intro-container .intro-box .btns .dwn-btns-box a{
+    width: 150px;
+    height: 15px;
+    border: 1px solid blueviolet;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+}
+.intro-container .intro-box .btns .dwn-btns-box a:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+.intro-container .intro-box .btns .dwn-btns-box #dwn-cut-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    cursor: pointer;
+}
 .intro-container .intro-box .contact-btn{
     border: 1px solid blueviolet;
     border-radius: 15px;
     color: blueviolet;
     padding: 5px 15px 5px 15px;
     text-decoration: none;
+    background-color: transparent;
+}
+.intro-container .intro-box .btns{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .intro-container .intro-box .contact-btn:hover{
     background-color: blueviolet;
@@ -269,8 +312,6 @@ body{
     flex-wrap: wrap;
     height: 420px;
     gap: 30px;
-    border-radius: 10px;
-    border-radius: 10px;
 }
 .skill-section h2{
     text-align: center;
@@ -281,6 +322,7 @@ body{
     height: 280px;
     top: 150px;
     background: linear-gradient(190deg,#008080,blueviolet);
+    border-radius: 10px;
 }
 .skill-section .skill-box .skills{
     display: flex;

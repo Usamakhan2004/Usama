@@ -17,6 +17,7 @@
         height: 700px;
     }
     .skill-section .skill-box .box-back-cover{
+        width: 500px;
         height: 550px;
     }
 }
@@ -191,14 +192,17 @@
     }
     .skill-section{
         justify-content: start;
-        height: 1520px;
+        height: 1610px;
     }
     .skill-section .skill-box{
         width: 350px;
+        margin-top: 50px;
+        gap: 50px;
     }
     .skill-section .skill-box .box-back-cover{
+        width: 300px;
         top: 100px;
-        height: 1420px;
+        height: 1460px;
     }
     @keyframes movestart1 {
         0% {
