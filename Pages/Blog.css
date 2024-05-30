@@ -2,12 +2,12 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, serif;
 }
 #root{
     position: relative;
     background-color: #36454F;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
 }
 .blog-body{
@@ -122,6 +122,25 @@ body{
 }
 .port-box{
     padding-left: 30px;
+}
+.port-box .note-box{
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    background-color: rgba(255, 191, 0, 0.2);
+    padding: 20px;
+    border-left: 4px solid #FC0FC0;
+    border-radius: 10px 0px 0px 10px;
+}
+.web-link{
+    text-decoration: none;
+    color: #DFFF00;
+}
+.web-link:hover{
+    color: #FC0FC0;
+    text-decoration: underline;
 }
 .port-box p{
     margin-right: 150px;
