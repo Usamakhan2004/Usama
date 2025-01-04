@@ -1,48 +1,54 @@
-let menuIcon = document.getElementById("menu-icon");
-let menuCut = document.getElementById("menuCut");
-let dropDown = document.getElementById("drop-down");
-let ddi = document.getElementById("ddi");
-let menu = document.getElementById("menu");
-let dwnBtn = document.getElementById("dwn-btn");
-let dwnbBox = document.getElementById("dwn-btns-box");
-let dwnCutBtn = document.getElementById("dwn-cut-btn");
+import { textTyping } from "./helpers/textTyping.js";
+import { redirectToEmailApp } from "./helpers/sendEmail.js";
+import { validateEmail } from "./helpers/emailValidation.js";
 
-let menuOpen = true;
-let dropOpen = true;
-let down = true;
-let dwnShown = true;
+const Headlines = ["Grow Your Business", "Your Vision, My Code", "Empowering Your Online Presence"];
 
-menuIcon.addEventListener("click", handleClick);
-menuCut.addEventListener("click", handleClick);
-dropDown.addEventListener("click", handleDropDown);
-dwnBtn.addEventListener("click", handleDownloadButton);
-dwnCutBtn.addEventListener("click", handleDownloadButton);
+const header = document.getElementById('header');
+const body = document.getElementById('custom-body');
 
-function handleClick(){
-    if(menuOpen){
-        menuOpen = false;
-        menu.style.left = "0px";
+const HiringForm = document.getElementById('hiring-form');
+
+const typingBox = document.getElementById('typing-box');
+
+// Variables of quick email section
+const quickContactForm = document.getElementById('quickContactForm');
+const quickEmailField = document.getElementById('quickEmailField');
+const contcatEmail =  document.getElementById('contactEmail');
+
+textTyping(Headlines, typingBox);
+
+body.addEventListener('scroll', () => {
+    if(body.scrollTop > 20){
+        header.classList.remove('mt-lg-2')
     }else{
-        menuOpen = true;
-        menu.style.left = "-260px";
+        header.classList.add('mt-lg-2')
     }
-}
-function handleDropDown(){
-    if(dropOpen){
-        dropOpen = false;
-        ddi.style.height = "175px";
+})
+
+HiringForm.addEventListener('submit', (event) => {
+    
+    if(!HiringForm.checkValidity()){
+        event.preventDefault();
+        event.stopPropagation();
     }else{
-        dropOpen = true;
-        ddi.style.height = "0px";
+        event.preventDefault();
+        let subject = document.getElementById('hiringFormSubject');
+        redirectToEmailApp(subject.value);
     }
-}
-function handleDownloadButton(){
-    if(dwnShown){
-        dwnShown = false;
-        dwnbBox.style.visibility = "visible";
+    HiringForm.classList.add('was-validated')
+});
+
+quickContactForm.addEventListener('submit', (evt) => {
+    
+    if(!quickContactForm.checkValidity()){
+        evt.preventDefault();
+        evt.stopPropagation();
     }else{
-        dwnShown = true;
-        dwnbBox.style.visibility = "hidden";
+        evt.preventDefault();
+        window.location = '#contactSection'
+        contcatEmail.value = quickEmailField.value;
+
     }
-    console.log("Ok");
-}
+    quickContactForm.classList.add('was-validated')
+})

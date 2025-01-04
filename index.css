@@ -2,505 +2,75 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#root{
-    position: relative;
-    background-color: #36454F;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+.menu{
+    transition: all .2s;
 }
-.intro-container{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #0A001C;
-    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 91%, 66% 96%, 31% 90%, 0 98%, 0 43%, 0 0);
-    overflow: hidden;
-}
-.intro-container span{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
-    z-index: -999;
-}
-.intro-container span:nth-child(3){
-    right: -40px;
-    bottom: 120px;
-    background: radial-gradient(#FF0038, #BF0A30);
-    animation: movestart2 60s linear infinite;
-}
-.intro-container span:nth-child(4){
-    left: -200px;
-    top: 120px;
-    background: radial-gradient(#4B0080,blueviolet);
-    animation: movestart1 60s linear infinite;
-}
-.intro-container span:nth-child(5){
-    top: -200px;
-    right: 0px;
-    background: radial-gradient(#C54B8C,#702963) ;
-    animation: movestart3 90s linear infinite;
-}
-.intro-container span:nth-child(6){
-    left: 20px;
-    bottom: -200px;
-    background: radial-gradient(#008080,#5097A6) ;
-    animation: movestart4 90s linear infinite;
-}
-@keyframes movestart1 {
-    0% {
-        transform: translate(0%, 0%);
-    }
-    100% {
-        transform: translate(4000%, 1000%);
-    }
-}
-@keyframes movestart2 {
-    0% {
-        transform: translate(0%, 0%);
-    }
-    100% {
-        transform: translate(-4000%, -2000%);
-    }
-}
-@keyframes movestart3 {
-    0% {
-        transform: translate(0%, 0%);
-    }
-    100% {
-        transform: translate(-5000%, 4000%);
-    }
-}
-@keyframes movestart4 {
-    0% {
-        transform: translate(0%, 0%);
-    }
-    100% {
-        transform: translate(4000%, -4000%);
-    }
-}
- .intro-container .intro-box{
-    border-left: 2px dashed blueviolet;
-    padding-left: 20px;
-    color: #fff;
-}
- .intro-container .intro-box h2, h1{
-    margin: 0px;
-}
-.intro-container .intro-box h1{
-    font-size: 35px;
-}
-.intro-container .intro-box h2{
-    color: blueviolet;
-    font-size: 20px;
-    font-style: italic;
-}
-.intro-container .intro-box p{
-    width: 400px;
-    margin-bottom: 40px;
-    text-align: justify;
-    line-height: 1.5;
-}
-.intro-container .intro-box .btns .dwn-btns-box{
-    position: absolute;
-    width: 200px;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 110px;
-    top: -30px;
-    border-radius: 10px;
-    background-color: #fff;
-    visibility: hidden;
-    gap: 10px;
-}
-.intro-container .intro-box .btns .dwn-btns-box a{
-    width: 150px;
-    height: 15px;
-    border: 1px solid blueviolet;
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-    padding: 12px;
-    border-radius: 10px;
-}
-.intro-container .intro-box .btns .dwn-btns-box a:hover{
-    background-color: blueviolet;
-    color: #fff;
-}
-.intro-container .intro-box .btns .dwn-btns-box #dwn-cut-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    cursor: pointer;
-}
-.intro-container .intro-box .contact-btn{
-    border: 1px solid blueviolet;
-    border-radius: 15px;
-    color: blueviolet;
-    padding: 5px 15px 5px 15px;
-    text-decoration: none;
-    background-color: transparent;
-}
-.intro-container .intro-box .btns{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.intro-container .intro-box .contact-btn:hover{
-    background-color: blueviolet;
-    color: #fff;
-    cursor: pointer;
-}
-.intro-container .image-box .image{
-    width: 300px;
-    height: 400px;
-}
-.intro-container .image-box{
-    position: relative;
-}
-.intro-container .image-box .image-cover{
-    position: absolute;
-    width: 350px;
-    height: 372px;
-    top: 80px;
-    left: -30px;
+.cursor{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background: linear-gradient(90deg,#008080,blueviolet);
-    /* clip-path: polygon(49% 55%, 86% 36%, 85% 100%, 13% 100%, 13% 36%); */
-    z-index: -2;
-}
-.intro-container .image-box .cover-design{
-    position: absolute;
-    width: 400px;
-    height: 100px;
-    background-color: #0A001C;
-    bottom: -61px;
-    left: -5px;
-}
-.intro-container .image-box .image-cover2{
-    position: absolute;
-    width: 300px;
-    height: 412px;
-    background-color: #008080;
-    right: 0px;
-    z-index: -3;
-}
-
-.top-boxes{
-    position: relative;
-    top: -100px;
-    display: flex;
-    justify-content: space-evenly;  
-    width: 100%;
-    z-index: 99;
-}
-.top-boxes .service-box{
-    display: flex;
-    width: 200px;
-    height: 180px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0E4C97;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    
-}
-.top-boxes .service-box:hover{
-    transform: scale(1.2);
-    background-color: #702963;
-}
-.top-boxes .service-box img{
-    width: 100px;
-    height: 100px;
-}
-.top-boxes .service-box .link{
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Services section css */
-
-.services_section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin: 100px 0px 200px 0px;
-    flex-wrap: wrap;
-}
-.services_section .service_text p{
-    width: 400px;
-    text-align: justify;
-}
-.services_section .service_images{
-    width: 500px;
-    height: 400px;
-    position: relative;
-}
-.services_section .service_images .service-images-cover{
-    position: absolute;
-    width: 550px;
-    top: -30px;
-    height: 500px;
-    background: linear-gradient(90deg,#008080,blueviolet);
-    clip-path: ellipse(50% 48% at 50% 50%);
-}
-.services_section .service_images img{
-    width: 300px;
-    position: absolute;
-    z-index: 99;
-}
-.services_section .service_images img:nth-child(1){
-    transform: rotateZ(20deg);
-    top: -20px;
-}
-.services_section .service_images img:nth-child(2){
-    left: 250px;
-    transform: rotateZ(20deg);
-}
-.services_section .service_images img:nth-child(3){
-    top: 180px;
-    transform: rotateZ(20deg);
-}
-.services_section .service_images img:nth-child(4){
-    top: 180px;
-    left: 250px;
-    transform: rotateZ(20deg);
-}
-.services_section .service_text ul{
-    list-style:square;
-    line-height: 1.5;
-}
-
-/* skills component css */
-
-.skill-section{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; 
-    width: 100%;
-    padding: 50px 0px 50px 0px;
-    background-image: url("./assets/thought.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.skill-section .skill-box{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    flex-wrap: wrap;
-    height: 420px;
-    gap: 30px;
-}
-.skill-section h2{
-    text-align: center;
-}
-.skill-section .skill-box .box-back-cover{
-    position: absolute;
-    width: 100%;
-    height: 280px;
-    top: 150px;
-    background: linear-gradient(190deg,#008080,blueviolet);
-    border-radius: 10px;
-}
-.skill-section .skill-box .skills{
-    display: flex;
-    width: 220px;
-    height: 350px;
-    background-color: #008080;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 20px;
-    z-index: 2;
-    transition: .2s;
-    box-shadow: 0px 0px 4px #fff;
-}
-.skill-section .skill-box .skills .skill{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-.skill-section .skill-box .skills .skill img{
-    margin-left: 30px;
-    width: 30px;
-    height: 30px;
-}
-.skill-section .skill-box .skills .skill h5{
-    margin: 10px 0px 0px 0px;
-}
-.skill-section .skill-box .skills:hover{
-    transform: translateY(-30px);
-}
-
-/* Projects CSS */
-
-.project-section{
-    display: flex;
-    margin: 100px 0px 100px 0px;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.project-section h1{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.project-section .projects{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-}
-.project-section .projects .project{
-    width: 270px;
-    height: 700px;
-    box-shadow: 0px 0px 2px #5097A6;
-    padding: 20px;
-    border-radius: 10px;
-}
-.project-section img{
-    width: 240px;
-    height: 180px;
-    border-radius: 10px;
-}
-.project-section .projects .project p{
-    text-align: justify;
-}
-.project-section .projects .project:hover{
-    box-shadow: 0px 0px 20px #5097A6;
-}
-.project-section .projects .project .tech{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-.project-section .projects .project .tech img{
-    width: 30px;
-    height: 30px;
-}
-.project-section .projects .project .tech h5{
-    margin: 0px;
-}
-.project-section .projects .project p a{
+    background-color: #4840A3;
     margin-left: 5px;
 }
-.project-section .projects .project .view-btn{
-    position: relative;
-    width: 150px;
-    height: 30px;
-    cursor: pointer;
-    background-color: #fff;
-    padding: 4px 30px 4px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    border: 1px solid blueviolet;
-    color: blueviolet;
-    top: 15px;
+.typing{
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 10px;
 }
-.project-section .projects .project .view-btn:hover{
-    background-color: blueviolet;
+.blink{
+    animation: blinking 1s ease-in-out infinite;
+}
+
+@keyframes blinking {
+    0%{
+       opacity: 0; 
+    }    
+    100%{
+        opacity: 1;
+    }    
+}
+
+.blue-hover:hover{
+    background-color: #4840A3 !important;
+    cursor: pointer;
     color: #fff;
 }
+.nav-link{
+    cursor: pointer;
+}
+.navbar-brand{
+    background: linear-gradient(90deg, #4840A3 , #19384A);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-/* Menu Css */
-.home-menu-icon{
-    width: 40px;
-    position: fixed;
-    top: 50%;
-    cursor: pointer;
-    left: 5px;
-    z-index: 99;
+
+@media (min-width: 576px) { 
+    .w-sm-75{
+        width: 75%;
+    }
 }
 
-.home-menu{
-    position: fixed;
-    width: 250px;
-    top: 40%;
-    left: -250px;
-    border-radius: 0px 15px 15px 0px;
-    background-color: #fff;
-    color: #000;
-    z-index: 999;
-    transition: 1s;
+@media (max-width: 768px) {
+    .benifits-box{
+        justify-content: left;
+        gap: 20px;
+    }
+    .featured-image{
+        width: 350px;
+    }
 }
-.home-menu .cut{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
-}
-.home-menu .Menu-items{
-    margin: 40px 0px 20px 0px;
-}
-.home-menu .Menu-items .Menu-item{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    border: 1px solid #702963;
-}
-.home-menu .Menu-items .Menu-item:hover{
-    background-color: rgba(112,45,99,0.5);
-}
-.home-menu .Menu-items .Menu-item .drop-down{
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 10px;
-}
-.home-menu .Menu-items .drop-down-items{
-    width: 100%;
-    height: 0px;
-    overflow: hidden;
-    transition: 1s;
-}
-.home-menu .Menu-items .drop-down-items .drop-down-item{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 42px;
-    padding-left: 30px;
-    text-decoration: none;
-    margin: 0px;
-    color: #000;
-    border: 1px solid  #702963;
-}
-.home-menu .Menu-items .drop-down-items .drop-down-item:hover{
-    background-color: rgba(112,45,99,0.5);
-    cursor: pointer;
-}
-.home-menu .Menu-items .Menu-item img{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-}
-.home-menu .Menu-items .Menu-item h4{
-    margin-left: 20px;
-    margin: 15px;
-}
+
+@media (min-width: 992px ) { 
+    .benifits-box{
+        justify-content: space-around;
+    }
+    .w-lg-75{
+        width: 75%;
+    }
+ }
