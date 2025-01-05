@@ -23,7 +23,7 @@ form.addEventListener('submit', async (evt) => {
         await emailjs.sendForm('service_9e5ki86', 'template_o3unocg', '#contactForm').then(function () {
             showDailogBox("assets/icons/success.png","Email has been sent successfully.", true)
         }, function (error) {
-            showDailogBox("assets/icons/failure.png","Failed to send the email..", false)
+            showDailogBox("assets/icons/failure.png","Failed to send the email.", false)
         });
         emailBtnSpinner.classList.add('d-none');
         contactFormSendingIcon.classList.remove('d-none');
