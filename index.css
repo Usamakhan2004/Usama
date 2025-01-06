@@ -48,7 +48,11 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.status-indicator{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+}
 
 @media (min-width: 576px) { 
     .w-sm-75{

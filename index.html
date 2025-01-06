@@ -10,10 +10,10 @@
 
     <!-- SEO Meta Tags -->
     <meta name="keywords"
-        content="Usama, Usama Khan, usamakhan2004, web frontend developer, web development, JavaScript, responsive design, HTML, CSS, portfolio, frontend projects, modern web technologies, UX/UI design">
+        content="Usama, Usama Khan, usamakhan2004, Web frontend developer,Frontend Developer, web development, JavaScript Developer, responsive design, HTML, CSS, portfolio, frontend projects, modern web technologies, UX/UI design">
     <meta name="keywords" content="Web developer, webDesigner, website, web, frontend, frontend developer, React">
     <meta name="author" content="Usama Khan">
-    <link rel="icon" href="assets/designer.png">
+    <link rel="icon" href="assets/images/designer.png">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="bootstrap/css/custom.css">
 </head>
@@ -26,9 +26,9 @@
         <header class="navbar navbar-expand-lg">
             <div class="container bg-info rounded mt-lg-2 p-2 px-4 d-flex fixed-top justify-content-between menu"
                 id="header">
-                <a href="/" class="navbar-brand">Usama</a>
+                <a href="/" class="navbar-brand" aria-label="Go to homepage">Usama</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MainMenu"
-                    aria-controls="MainMenu" aria-expanded="false" aria-label="Main Menu">
+                    aria-controls="MainMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -36,7 +36,7 @@
                 <nav class="collapse navbar-collapse flex-grow-0 gap-5" id="MainMenu" itemscope
                     itemtype="https://schema.org/SiteNavigationElement">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link active" itemprop="url"><span
+                        <li class="nav-item"><a href="/" class="nav-link active" itemprop="url"><span
                                     itemprop="name">Home</span></a></li>
                         <li class="nav-item"><a href="#serviceSection" class="nav-link" itemprop="url"><span
                                     itemprop="name">Services</span></a></li>
@@ -44,12 +44,12 @@
                                     itemprop="name">Projects</span></a></li>
                         <li class="nav-item"><a href="#aboutSection" class="nav-link" itemprop="url"><span
                                     itemprop="name">About</span></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link" itemprop="url">FAQ's</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link" itemprop="url">FAQ's</a></li>
                     </ul>
                     <div class="">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hiringModal">Hire
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hiringModal" aria-label="Hire Me">Hire
                             Me</button>
-                        <a href="#contactSection" class="btn btn-primary">Ask?</a>
+                        <a href="#contactSection" class="btn btn-primary" aria-label="Ask Question">Ask?</a>
                     </div>
                 </nav>
             </div>
@@ -66,38 +66,38 @@
                         portfolio with a <span class="text-warning">visually appealing website.</span></h1>
 
                     <!-- Quick contact form -->
-                    <form class="row needs-validation" action="" id="quickContactForm" novalidate>
+                    <form class="row needs-validation" title="Quick contact form" id="quickContactForm" novalidate>
                         <div class="col-8">
                             <label for="" class="visually-hidden">Email</label>
                             <input type="email" class="form-control border border-primary bg-transparent"
-                                placeholder="Email" id="quickEmailField" required />
+                                placeholder="Email" id="quickEmailField" aria-label="Enter your email" required />
                             <div class="invalid-feedback">
                                 Email address is required
                             </div>
                         </div>
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary" id="quickEmailBtn">
-                                <img src="assets/icons/send.png" width="24px" height="24px" alt="sending button icon" />
+                            <button type="submit" class="btn btn-primary" id="quickEmailBtn" aria-label="Send email">
+                                <img src="assets/icons/send.png" width="24px" height="24px" alt="Send email icon" loading="lazy"/>
                             </button>
                         </div>
                     </form>
 
                     <!-- Socail media link -->
                     <div class="d-flex gap-4 mt-4">
-                        <a href="https://www.facebook.com/profile.php?id=61560003434531" target="_blank"><img
+                        <a href="https://www.facebook.com/profile.php?id=61560003434531" target="_blank" aria-label="Facebook"><img
                                 src="assets/icons/facebook.png" alt="" width="24px" height="24px" /></a>
-                        <a href="https://www.instagram.com/usama_developer?igsh=YzljYTk1ODg3Zg== " target="_blank"><img
+                        <a href="https://www.instagram.com/usama_developer?igsh=YzljYTk1ODg3Zg==" target="_blank" aria-label="Instagram"><img
                                 src="assets/icons/instagram.png" alt="" width="24px" height="24px" /></a>
-                        <a href="https://www.linkedin.com/in/usama-khan2004" target="_blank"><img
+                        <a href="https://www.linkedin.com/in/usama-khan2004" target="_blank" aria-label="Linkedin"><img
                                 src="assets/icons/linkedin.png" alt="" width="24px" height="24px" /></a>
-                        <a href="https://github.com/Frontend-Code20" target="_blank"><img src="assets/icons/github.png"
+                        <a href="https://github.com/Frontend-Code20" target="_blank" aria-label="GitHub"><img src="assets/icons/github.png"
                                 alt="" width="24px" height="24px" /></a>
-                        <a href="https://wa.me/+923073073104" target="_blank"><img src="assets/icons/whatsapp.png"
+                        <a href="https://wa.me/+923073073104" target="_blank" aria-label="Whatsapp"><img src="assets/icons/whatsapp.png"
                                 alt="" width="28px" height="28px" /></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 d-flex justify-content-center">
-                    <img src="assets/images/grow.png" alt="" class="featured-image" />
+                    <img src="assets/images/grow.png" alt="Featured image of site" class="featured-image" loading="lazy"/>
                 </div>
             </section>
             <!-- Intro section end -->
@@ -108,65 +108,41 @@
                 <p class="text-center">Creating responsive, user-friendly designs tailored to your needs.</p>
                 <div class="row gap-5 flex-wrap justify-content-center">
                     <div class="card bg-primary align-items-center" style="width: 12rem;">
-                        <img src="assets/icons/portfolio.png" class="mt-4" alt="" width="92px" height="92px">
+                        <img src="assets/icons/portfolio.png" class="mt-4" alt="Portfolio service icon" loading="lazy" width="92px" height="92px">
                         <h5 class="card-title text-white mt-4 mb-4">Portfolio</h5>
                     </div>
                     <div class="card bg-success align-items-center" style="width: 12rem;">
-                        <img src="assets/icons/promotional.png" class="mt-4" alt="" width="92px" height="92px">
+                        <img src="assets/icons/promotional.png" class="mt-4" alt="Promotional service icon" width="92px" height="92px">
                         <h5 class="card-title text-white mt-4 mb-4">Promotional</h5>
                     </div>
                     <div class="card bg-dark align-items-center" style="width: 12rem;">
-                        <img src="assets/icons/network.png" class="mt-4" alt="" width="92px" height="92px">
+                        <img src="assets/icons/network.png" class="mt-4" alt="Business service icon" loading="lazy" width="92px" height="92px">
                         <h5 class="card-title text-white mt-4 mb-4">Business</h5>
                     </div>
                     <div class="card bg-warning align-items-center" style="width: 12rem;">
-                        <img src="assets/icons/cart.png" class="mt-4" alt="" width="92px" height="92px">
+                        <img src="assets/icons/cart.png" class="mt-4" alt="Online store icon" loading="lazy" width="92px" height="92px">
                         <h5 class="card-title text-white mt-4 mb-4">Online Store</h5>
                     </div>
                 </div>
                 <div class="row justify-content-center w-100">
                     <div class="col-lg-8 col-md-10 border border-primary rounded-4 p-3 mt-4">
                         <div class="d-flex benifits-box flex-wrap">
-                            <div class="d-flex flex-column gap-2">
-                                <div class="d-flex gap-2">
-                                    <img src="assets/icons/success.png" alt="" width="24px" height="24px">
-                                    <span>Functional website</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <img src="assets/icons/success.png" alt="" width="24px" height="24px">
-                                    <span>Mobile responsive</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <img src="assets/icons/success.png" alt="" width="24px" height="24px">
-                                    <span>SEO Friendly</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <img src="assets/icons/success.png" alt="" width="24px" height="24px">
-                                    <span>Socail media integration</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column gap-2">
-                                <div class="d-flex gap-2">
-                                    <img src="assets/icons/success.png" alt="" width="24px" height="24px">
-                                    <span>Fast loading pages</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <img src="assets/icons/success.png" alt="" width="24px" height="24px">
-                                    <span>Speed optimized</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <img src="assets/icons/success.png" alt="" width="24px" height="24px">
-                                    <span>Unlimited revisions</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <img src="assets/icons/success.png" alt="" width="24px" height="24px">
-                                    <span>Clean Code</span>
-                                </div>
-                            </div>
+                            <ul class="d-flex flex-column gap-2 list-unstyled">
+                                <li class="d-flex gap-2"><img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px"><span>Functional website</span></li> 
+                                <li class="d-flex gap-2"><img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px"><span>Mobile responsive</span></li>
+                                <li class="d-flex gap-2"><img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px"><span>SEO Friendly</span></li> 
+                                <li class="d-flex gap-2"><img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px"><span>Social media integration</span></li>
+                            </ul>
+                            <ul class="d-flex flex-column gap-2 list-unstyled">
+                                <li class="d-flex gap-2"><img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px"><span>Fast loading pages</span></li>
+                                <li class="d-flex gap-2"><img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px"><span>Speed optimized</span></li>
+                                <li class="d-flex gap-2"><img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px"><span>Unlimited revisions</span></li>
+                                <li class="d-flex gap-2"><img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px"><span>Clean Code</span></li>
+                            </ul>
                         </div>
                         <div class="w-100 d-flex justify-content-center mt-4">
                             <div class="d-flex gap-2">
-                                <img src="assets/icons/success.png" alt="" width="24px" height="24px">
+                                <img src="assets/icons/success.png" alt="Green checkmark for success" loading="lazy" width="24px" height="24px">
                                 <span>Delivery on time</span>
                             </div>
                         </div>
@@ -176,15 +152,15 @@
             <!-- Services section end -->
 
             <!-- About section start -->
-            <section class="d-flex w-100 flex-column align-items-center mt-5" title="About Me" id="aboutSection">
+            <section class="d-flex w-100 flex-column align-items-center mt-5" title="About Usama - Frontend Developer" id="aboutSection">
                 <h2>About Me</h2>
                 <div class="row justify-content-center">
                     <div class="d-flex col-lg-9 justify-content-center">
                         <div class="border border-primary d-flex align-items-center flex-column p-4 rounded-4">
-                            <img src="assets/icons/portfolio.png" alt="Profile">
+                            <img src="assets/icons/portfolio.png" alt="Profile picture of Usama">
                             <div class="d-flex align-items-center gap-2">
                                 <h3>Usama</h3>
-                                <span class="bg-primary rounded-5" style="width: 8px; height: 8px;"></span>
+                                <span class="status-indicator bg-primary rounded-5"></span>
                                 <span>Frontend Developer</span>
                             </div>
                             <p>I am proficient in WordPress, Bootstrap, React, and JavaScript. I have worked on
@@ -211,10 +187,10 @@
                         <div class="card bg-light blue-hover">
                             <div class="d-flex justify-content-between p-3 pb-0">
                                 <div class="d-flex gap-2">
-                                    <img src="assets/icons/portfolio-icon.png" alt="" width="24px" height="24px">
+                                    <img src="assets/icons/portfolio-icon.png" alt="Portfolio project icon" loading="lazy" width="24px" height="24px">
                                     <h5 class="card-title">Portfolio Website</h5>
                                 </div>
-                                <img src="assets/icons/github.png" alt="github account icon" width="24px" height="24px">
+                                <img src="assets/icons/github.png" alt="Github icon" loading="lazy" width="24px" height="24px">
                             </div>
                             <div class="card-body">A modern portfolio website that includes experience, projects, and
                                 about sections.</div>
@@ -224,10 +200,10 @@
                         <div class="card bg-light blue-hover">
                             <div class="d-flex justify-content-between p-3 pb-0">
                                 <div class="d-flex gap-2">
-                                    <img src="assets/icons/news.png" alt="" width="24px" height="24px">
+                                    <img src="assets/icons/news.png" alt="News Aggregator project icon" loading="lazy" width="24px" height="24px">
                                     <h5 class="card-title">News Aggregator</h5>
                                 </div>
-                                <img src="assets/icons/github.png" alt="github account icon" width="24px" height="24px">
+                                <img src="assets/icons/github.png" alt="Github icon" loading="lazy" width="24px" height="24px">
                             </div>
                             <div class="card-body">News Aggregator, This retrieves news from news APIs and presents it
                                 in a post-like format.</div>
@@ -237,10 +213,10 @@
                         <div class="card bg-light blue-hover">
                             <div class="d-flex justify-content-between p-3 pb-0">
                                 <div class="d-flex gap-2">
-                                    <img src="assets/icons/conversion.png" alt="" width="24px" height="24px">
+                                    <img src="assets/icons/conversion.png" alt="Number Conversion project icon" loading="lazy" width="24px" height="24px">
                                     <h5 class="card-title">Number Conversion</h5>
                                 </div>
-                                <img src="assets/icons/github.png" alt="github account icon" width="24px" height="24px">
+                                <img src="assets/icons/github.png" alt="Github icon" loading="lazy" width="24px" height="24px">
                             </div>
                             <div class="card-body">A tool for converting numbers between binary, decimal, octal, and
                                 hexadecimal modes. </div>
@@ -250,10 +226,10 @@
                         <div class="card bg-light blue-hover">
                             <div class="d-flex justify-content-between p-3 pb-0">
                                 <div class="d-flex gap-2">
-                                    <img src="assets/icons/task.png" alt="" width="24px" height="24px">
+                                    <img src="assets/icons/task.png" alt="Task Manager project icon" loading="lazy" width="24px" height="24px">
                                     <h5 class="card-title">Task Manager</h5>
                                 </div>
-                                <img src="assets/icons/github.png" alt="github account icon" width="24px" height="24px">
+                                <img src="assets/icons/github.png" alt="Github icon" loading="lazy" width="24px" height="24px">
                             </div>
                             <div class="card-body">A To-Do List React app, which can create tasks, create a list of
                                 tasks, and display filtered tasks.</div>
@@ -269,40 +245,40 @@
                 <div class="d-flex flex-column border border-primary p-3 rounded-4 w-lg-75 align-items-center">
 
                     <!-- Contact form -->
-                    <form id="contactForm" class="w-100 needs-validation" method="post" novalidate>
+                    <form id="contactForm" class="w-100 needs-validation" method="post" title="Contact form" novalidate>
                         <div class="row">
                             <div class="position-relative col-lg-6 col-md-12 mb-2">
-                                <label for="#user-name" class="form-label visually-hidden">Email</label>
+                                <label for="user-name" class="visually-hidden">Email</label>
                                 <input type="text" placeholder="Name" name="name"
-                                    class="form-control border border-primary bg-transparent" required>
+                                    class="form-control border border-primary bg-transparent" aria-label="Enter your Name" required>
                                 <div class="invalid-feedback">
                                     Name is required.
                                 </div>
                             </div>
                             <div class="position-relative col-lg-6 mb-2">
-                                <label for="#user-email" class="form-label visually-hidden">Email</label>
-                                <input type="text" placeholder="Email" name="email" id="contactEmail"
-                                    class="form-control border border-primary bg-transparent" required>
+                                <label for="user-email" class="visually-hidden">Email</label>
+                                <input type="email" placeholder="Email" name="email" id="contactEmail"
+                                    class="form-control border border-primary bg-transparent" aria-label="Enter your Email" required>
                                 <div class="invalid-feedback">
                                     Enter your Email.
                                 </div>
                             </div>
                         </div>
                         <div class="position-relative">
-                            <label for="" class="visually-hidden">Message</label>
-                            <textarea name="message" id="" rows="10"
-                                class="form-control border border-primary bg-transparent" placeholder="Message"
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea name="message" id="message" rows="10"
+                                class="form-control border border-primary bg-transparent" placeholder="Message" aria-label="Enter your message"
                                 required></textarea>
                             <div class="invalid-feedback">
                                 Enter your Message.
                             </div>
                         </div>
                         <button type="submit" class="d-flex align-items-center btn btn-primary mt-2 px-4"
-                            id="contactFormBtn">
+                            id="contactFormBtn" role="button">
                             <div class="spinner-border spinner-border-sm text-warning d-none" id="emailBtnSpinner">
-                                <span class="visually-hidden"></span>
+                                <span class="visually-hidden">Loading...</span>
                             </div>
-                            <img src="assets/icons/send.png" alt="" width="24px" height="24px"
+                            <img src="assets/icons/send.png" alt="Send email icon" loading="lazy" width="24px" height="24px"
                                 id="contactFormSendingIcon">
                             <span class="ms-2">Send</span>
                         </button>
@@ -341,22 +317,22 @@
                             <div class="mt-2">
                                 <label for="hiringFormEmail" class="visually-hidden">Email</label>
                                 <input type="email" placeholder="Email" name="email" id="hiringFormEmail"
-                                    value="usamauk0931307" class="form-control border border-primary" readonly>
+                                    value="usamauk0931307" class="form-control border border-primary" aria-label="Enter your email" readonly>
                             </div>
                             <div class="mt-2">
                                 <label for="hiringFormSubject" class="visually-hidden">Subject</label>
                                 <input type="text" placeholder="Subject" name="subject" id="hiringFormSubject"
-                                    class="form-control border border-primary" required>
+                                    class="form-control border border-primary" aria-label="Enter subject" required>
                                 <div class="invalid-feedback">
                                     Please start by entering the subject.
                                 </div>
                             </div>
                             <p class="form-text">Start a conversation via email by entering just the subject.</p>
-                            <input type="submit" value="Start conversation" class="btn btn-primary">
+                            <input type="submit" value="Start conversation" role="button" aria-label="Send email Button" class="btn btn-primary">
                         </form>
                         <div class="w-100 position-relative" style="height: 40px;">
                             <a href="https://wa.me/+923073073104"><img src="assets/icons/whatsapp.png"
-                                    class="position-absolute end-0" width="32px" height="32px" alt="whatsapp"></a>
+                                    class="position-absolute end-0" aria-label="Whatsapp icon" loading="lazy" width="32px" height="32px" alt="whatsapp"></a>
                         </div>
                     </div>
                 </div>
@@ -374,7 +350,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="d-flex flex-column align-items-center gap-2">
-                        <img src="" alt="message" id="modalImage" width="100px">
+                        <img src="" alt="feedback icon" loading="lazy" id="modalImage" width="100px">
                         <h3 class="fs-5" id="modalTitle"></h3>
                         <a class="btn btn-primary" id="modalBtn"></a>
                     </div>
