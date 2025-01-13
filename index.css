@@ -8,18 +8,15 @@ body{
     transition: all .2s;
 }
 .cursor{
-    display: inline-flex;
+    display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #4840A3;
     margin-left: 5px;
 }
-.typing{
-    display: inline-flex;
-    align-items: center;
-    height: 20px;
-    margin-bottom: 10px;
+.typing-box{
+    display: inline-block;
 }
 .blink{
     animation: blinking 1s ease-in-out infinite;

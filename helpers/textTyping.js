@@ -1,31 +1,35 @@
-let i = 0;
-let index = 0;
+let currentTextIndex = 0;
+let charIndex = 0;
 
 export function textTyping(values, target) {
-    const text = values[i];
+    target.innerHTML = '<span class="cursor blink"></span>';
+    charIndex = 0;
+
+    const text = values[currentTextIndex];
     
     const typing = () => {
-        if (index <= text.length) {
-            target.innerHTML = text.slice(0, index) + '<span class="cursor"></span>';
-            index++;
+
+        target.innerHTML = text.slice(0, charIndex) + '<span class="cursor"></span>';
+        charIndex++;
+        
+        if (charIndex <= text.length) {
             setTimeout(typing, 100);
         } else {
-            const cursor = document.querySelector('.cursor');
-            cursor.classList.add('blink');
+            document.querySelector('.cursor').classList.add('blink');
             setTimeout(clearText, 3000);
         }
     }
     
     const clearText = () => {
-        if (index >= 0) {
-            target.innerHTML = text.slice(0, index) + '<span class="cursor"></span>';
-            index--;
+        target.innerHTML = text.slice(0, charIndex) + '<span class="cursor"></span>';
+        charIndex--;
+        
+        if (charIndex >= 0) {
             setTimeout(clearText, 100);
         } else {
-            const cursor = document.querySelector('.cursor');
-            cursor.classList.add('blink')
-            i < 2 ? i++ : i = 0;
-            setTimeout(() => textTyping(values, target), 1000);
+            document.querySelector('.cursor').classList.add('blink')
+            currentTextIndex < 2 ? currentTextIndex++ : currentTextIndex = 0;
+            setTimeout(textTyping, 1000, values, target);
         }
     }
 
