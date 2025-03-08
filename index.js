@@ -1,11 +1,11 @@
 import { textTyping } from "./helpers/textTyping.js";
 import { redirectToEmailApp } from "./helpers/sendEmail.js";
-import { validateEmail } from "./helpers/emailValidation.js";
 
-const Headlines = ["Grow Your Business", "Your Vision, My Code", "Empowering Your Online Presence"];
+const Headlines = ["Usama | Web Developer","Grow Your Business", "Your Vision, My Code", "Empowering Your Online Presence"];
 
 const header = document.getElementById('header');
 const body = document.getElementById('custom-body');
+const ownerName = document.getElementById('owner-name');
 
 const HiringForm = document.getElementById('hiring-form');
 
@@ -20,9 +20,11 @@ textTyping(Headlines, typingBox);
 
 body.addEventListener('scroll', () => {
     if(body.scrollTop > 20){
-        header.classList.remove('mt-lg-2')
+        header.classList.remove('mt-lg-2');
+        ownerName.innerHTML = "Usama | Web Developer"
     }else{
-        header.classList.add('mt-lg-2')
+        ownerName.innerHTML = "Usama"
+        header.classList.add('mt-lg-2');
     }
 })
 
