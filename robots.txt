@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://usamakhan2004.github.io/Usama/sitemap.xml

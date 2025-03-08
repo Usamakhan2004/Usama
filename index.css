@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu{
+    transition: all .2s;
+}
+.cursor{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4840A3;
+    margin-left: 5px;
+}
+.typing-box{
+    display: inline-block;
+}
+.blink{
+    animation: blinking 1s ease-in-out infinite;
+}
+
+@keyframes blinking {
+    0%{
+       opacity: 0; 
+    }    
+    100%{
+        opacity: 1;
+    }    
+}
+.w-10{
+    width: 10px;
+    height: 10px;
+    background-color: #4840A3;
+}
+.nav-link{
+    cursor: pointer;
+}
+.navbar-brand{
+    background: linear-gradient(90deg, #4840A3 , #0d6efd);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.status-indicator{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+}
+
+@media (min-width: 576px) { 
+    .w-sm-75{
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .benifits-box{
+        justify-content: left;
+        gap: 20px;
+    }
+    .featured-image{
+        width: 350px;
+    }
+}
+
+@media (min-width: 992px ) { 
+    .benifits-box{
+        justify-content: space-around;
+    }
+    .w-lg-75{
+        width: 75%;
+    }
+ }
