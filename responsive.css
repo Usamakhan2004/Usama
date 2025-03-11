@@ -1,0 +1,36 @@
+/* Extra Small (xs): Below 576px */
+@media (max-width: 575px) {
+    .custom-btn{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Small (sm): 576px and up */
+@media (min-width: 576px) {
+    .custom-btn{
+        width: 40%;
+    }
+}
+
+/* Medium (md): 768px and up */
+@media (min-width: 768px) {
+    
+}
+
+/* Large (lg): 992px and up */
+@media (min-width: 992px) {
+    .custom-btn{
+        width: initial;
+    }
+}
+
+/* Extra Large (xl): 1200px and up */
+@media (min-width: 1200px) {
+    
+}
+
+/* XXL (xxl): 1400px and up */
+@media (min-width: 1400px) {
+    
+}
