@@ -13,6 +13,11 @@ const modalBody = document.getElementById('modal-body');
 const emailBtnSpinner = document.getElementById('btnSpinner');
 const contactFormBtn = document.getElementById('contactFormBtn');
 
+const loader = document.getElementById('loader');
+window.addEventListener('load', () => {
+    loader.classList.toggle('d-none', 'd-flex');
+});
+
 form.addEventListener('submit', async (evt) => {
     if (!form.checkValidity()) {
         evt.preventDefault();
@@ -29,7 +34,6 @@ form.addEventListener('submit', async (evt) => {
             showDailogBox(false);
         });
         emailBtnSpinner.classList.add('d-none');
-        contactFormBtn.classList.add('p-0')
         contactFormBtn.disabled = false;
     }
     form.classList.add('was-validated');

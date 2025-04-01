@@ -50,10 +50,10 @@
 </head>
 
 <body>
-    <section class="bg-black-gray">
+    <section class="bg-black-gray position-relative">
 
         <!-- Hero section with header starts -->
-        <section class="hero-section d-flex flex-column">
+        <section class="hero-section d-flex flex-column w-fixed">
             <div>
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container">
@@ -465,8 +465,8 @@
                                 <select class="form-select bg-dark-gray text-aqua border-aqua"
                                     aria-label="Default select example" name="reason" required>
                                     <option value="" selected></option>
-                                    <option value="1">For Hiring</option>
-                                    <option value="2">As Client</option>
+                                    <option value="Hire You">Hire You</option>
+                                    <option value="Work With You">Work With You</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -486,6 +486,10 @@
             </div>
         </section>
         <!-- Contact section ends -->
+
+        <div class="position-fixed top-0 start-0 w-fixed d-flex justify-content-center align-items-center" id="loader">
+            <img src="./assets/loader.gif" alt="loading" width="100">
+        </div>
 
         <footer class="text-light-gray bg-dark-gray">
             <div class="container">
@@ -577,7 +581,7 @@
     <!-- Email Info modal starts-->
     <div class="modal" tabindex="-1" id="emailModal">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content bg-dark-gray text-light-gray">
                 <div class="modal-body d-flex flex-column gap-4 border-top rounded-2" id="modal-body">
                     <div id="modalIcon" class="position-absolute top-0 start-50 translate-middle"><span
                             class="bg-success px-4 py-4 rounded-circle"><i
