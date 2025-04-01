@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg
+    width="200"
+    height="200"
+    viewBox="0 0 200 200"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- LED Monitor -->
+    <rect x="30" y="40" width="120" height="80" rx="5" stroke="#00FFFF" stroke-width="4"/>
+    
+    <!-- Monitor Stand -->
+    <line x1="85" y1="125" x2="115" y2="125" stroke="#00FFFF" stroke-width="4"/>
+    <rect x="80" y="130" width="40" height="8" stroke="#00FFFF" stroke-width="2"/>
+
+    <!-- Left Side Content (Hero & Text Blocks) -->
+    <rect x="40" y="50" width="70" height="20" stroke="#00FFFF" stroke-width="2"/>
+    <line x1="40" y1="80" x2="105" y2="80" stroke="#00FFFF" stroke-width="2"/>
+    <line x1="40" y1="90" x2="100" y2="90" stroke="#00FFFF" stroke-width="2"/>
+
+    <!-- Call-to-Action (CTA) Button -->
+    <rect x="50" y="102" width="35" height="10" stroke="#00FFFF" stroke-width="2"/>
+
+    <!-- Mobile Preview (Smaller Height) -->
+    <rect x="138" y="60" width="40" height="50" stroke="#00FFFF" stroke-width="2"/>
+    <circle cx="158" cy="102" r="2" fill="#00FFFF"/>
+</svg>

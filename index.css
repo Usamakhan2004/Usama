@@ -1,103 +1,190 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.menu{
-    transition: all .2s;
-}
-.cursor{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #4840A3;
-    margin-left: 5px;
-}
-.typing-box{
-    display: inline-block;
-}
-.blink{
-    animation: blinking 1s ease-in-out infinite;
+    font-family: "Inter", sans-serif;
 }
 
-@keyframes blinking {
-    0%{
-       opacity: 0; 
-    }    
-    100%{
-        opacity: 1;
-    }    
+.hero-section {
+    width: 100%;
+    height: 100vh;
 }
-.w-10{
-    width: 10px;
-    height: 10px;
-    background-color: #4840A3;
+
+.navbar-nav .nav-link {
+    font-size: 14px;
 }
-.nav-link{
-    cursor: pointer;
+
+.navbar-nav .nav-link:hover {
+    color: #00FFFF;
 }
-.navbar-brand{
-    background: linear-gradient(90deg, #4840A3 , #0d6efd);
-    font-weight: bold;
+
+.space-grotesk {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.text-aqua {
+    color: #00FFFF;
+}
+
+.hero-heading .name {
+    width: 100%;
+    font-size: 44px;
+}
+
+.avatar-box {
+    width: 200px;
+    height: 200px;
+}
+
+.avatar-3d {
+    top: 9px;
+    left: 25px;
+    height: 150px;
+}
+
+.avatar-box .back {
+    transform: rotateZ(-2deg);
+}
+
+.grd-text {
+    background: linear-gradient(45deg, #00FFFF, #8A2BE2);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.shadow-white {
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.pro-card {
+    width: 150px;
+    transition: all .2s;
+}
+
+.pro-card:hover {
+    transform: scale(1.1);
+}
+
+.py-section {
+    padding: 70px 0px;
+}
+
+.line-box {
+    width: 100%;
+    height: 4px;
+}
+
+.line-1 {
+    width: 75%;
+    height: 4px;
+}
+
+.line-2 {
+    width: 15%;
+    height: 4px;
+}
+
+#about {
+    margin: 50px 0;
+    border-radius: 40%;
+    box-shadow: -5px -5px 10px #8A2BE2,
+        5px -5px 10px #00FFFF;
+}
+
+.project-card {
+    height: 300px;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slick-dots li button:before {
+    font-size: 16px !important; 
+    height: 20px;
+    color: white !important; 
+    opacity: 0.75
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #00FFFF !important;
+    opacity: 1;
+  }
+  
+
+.no_decoration {
+    text-decoration: none;
+}
+
+.tlt {
+    display: inline-block;
+    /* Ensures proper rendering */
+}
+
+.tlt span {
+    background: linear-gradient(45deg, #00FFFF, #8A2BE2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.status-indicator{
-    width: 8px;
-    height: 8px;
     display: inline-block;
+    /* Ensures background-clip applies */
 }
 
- #custom-body{
-     /* background-color: #EBf5f0 !important; */
+input::placeholder {
+    color: #00FFFF !important;
 }
 
-.custom-card{
-    /* background-color: #DBE2E9 !important; */
-    padding: 5px;
-    height: 100%;
-    transition: all .2s;
-}
-.custom-card:hover{
-    transform: skewX(4deg);
-}
-.custom-img{
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 1px #000;
-}
-.switch-btn{
-    width: 45px;
-    height: 22px;
-    border-radius: 40px;
-    background-color: #fff;
-    cursor: pointer;
-}
-.switch-btn-circle{
-    width: 22px;
-    height: 22px;
-    border-radius: 50px;
-    background-color: #aaa9a9;
-    transition: all .2s;
-}
-.switch-btn-active{
-    background-color: #fff !important;
-    transform: translateX(24px);
+textarea::placeholder {
+    color: #00FFFF !important;
 }
 
-.dark-input::placeholder{
-    color: #aaa9a9;
+.triangle-top-right {
+    top: -10px;
+    right: -10px;
+    visibility: hidden;
 }
-.dark-input{
-    color: #fff !important;
+
+.triangle-bottom-left {
+    bottom: -10px;
+    left: -10px;
+    visibility: hidden;
 }
-.dark-card{
-    background-color: #282828;
-    border: none !important;
-    box-shadow: 0 0 2px #fff;
+
+#services .card:hover .triangle-bottom-left {
+    visibility: visible;
 }
-.dark-card{
-    color: #fff;
+
+#services .card:hover .triangle-top-right {
+    visibility: visible;
+}
+
+#emailModal .modal-body{
+    border-width: 15px !important;
+}
+
+@media (min-width: 768px) {
+    .avatar-box {
+        width: 400px;
+        height: 400px;
+        }
+        
+        .avatar-3d {
+        top: 17px;
+        left: 50px;
+        height: 300px;
+        }
+        
+        .avatar-box .back {
+        transform: rotateZ(-2deg);
+        }
+        
+        .hero-heading .name {
+        font-size: 64px;
+        }
+        .pro-card {
+        width: 200px;
+        }
 }

@@ -1,56 +1,57 @@
-import { textTyping } from "./helpers/textTyping.js";
-import { redirectToEmailApp } from "./helpers/sendEmail.js";
+emailjs.init('NrD8nkU-guwsBWMcy');
 
-const Headlines = ["Usama | Web Developer","Grow Your Business", "Your Vision, My Code", "Empowering Your Online Presence"];
+const form = document.getElementById('contactForm');
 
-const header = document.getElementById('header');
-const body = document.getElementById('custom-body');
-const ownerName = document.getElementById('owner-name');
 
-const HiringForm = document.getElementById('hiring-form');
+const modal = new bootstrap.Modal(document.getElementById('emailModal'));
+const modalTitle = document.getElementById('modalTitle');
+const modalIcon = document.getElementById('modalIcon');
+const modalBtn = document.getElementById('modalBtn');
+const message = document.getElementById('message');
+const modalBody = document.getElementById('modal-body');
 
-const typingBox = document.getElementById('typing-box');
+const emailBtnSpinner = document.getElementById('btnSpinner');
+const contactFormBtn = document.getElementById('contactFormBtn');
 
-// Variables of quick email section
-const quickContactForm = document.getElementById('quickContactForm');
-const quickEmailField = document.getElementById('quickEmailField');
-const contcatEmail =  document.getElementById('contactEmail');
-
-textTyping(Headlines, typingBox);
-
-body.addEventListener('scroll', () => {
-    if(body.scrollTop > 20){
-        header.classList.remove('mt-lg-2');
-        ownerName.innerHTML = "Usama | Web Developer"
-    }else{
-        ownerName.innerHTML = "Usama"
-        header.classList.add('mt-lg-2');
-    }
-})
-
-HiringForm.addEventListener('submit', (event) => {
-    
-    if(!HiringForm.checkValidity()){
-        event.preventDefault();
-        event.stopPropagation();
-    }else{
-        event.preventDefault();
-        let subject = document.getElementById('hiringFormSubject');
-        redirectToEmailApp(subject.value);
-    }
-    HiringForm.classList.add('was-validated')
-});
-
-quickContactForm.addEventListener('submit', (evt) => {
-    
-    if(!quickContactForm.checkValidity()){
+form.addEventListener('submit', async (evt) => {
+    if (!form.checkValidity()) {
         evt.preventDefault();
         evt.stopPropagation();
-    }else{
+    } else {
+        console.log("OK");
         evt.preventDefault();
-        window.location = '#contactSection'
-        contcatEmail.value = quickEmailField.value;
-
+        emailBtnSpinner.classList.remove('d-none');
+        contactFormBtn.disabled = true;
+        await emailjs.sendForm('service_9e5ki86', 'template_o3unocg', '#contactForm').then(function () {
+            showDailogBox(true);
+        }, function (error) {
+            console.log(error);
+            showDailogBox(false);
+        });
+        emailBtnSpinner.classList.add('d-none');
+        contactFormBtn.classList.add('p-0')
+        contactFormBtn.disabled = false;
     }
-    quickContactForm.classList.add('was-validated')
-})
+    form.classList.add('was-validated');
+});
+
+function showDailogBox(status) {
+    modalTitle.innerHTML = status ? "Message Sent!" : "Oops!";
+    modalBtn.innerHTML = status ? "Done" : "Try Again";
+    modalTitle.style.color = status ? "#28a745" : "#dc3545";
+    modalBody.classList.remove("border-success", "border-danger");
+    modalBody.classList.add(status ? "border-success" : "border-danger");    
+    if (status) {
+        message.innerHTML = "I got your message and will get back to you soon. Thanks for reaching out!"
+        modalIcon.innerHTML = '<span class="bg-success px-4 py-4 rounded-circle"><i class="fa-solid fa-check fa-2xl text-white"></i></span>'
+    } else {
+        message.innerHTML = "Looks like there was a small issue. Check your connection and try again!";
+        modalIcon.innerHTML = '<span class="bg-danger px-4 py-4 rounded-circle"><i class="fa-solid fa-xmark fa-2xl text-white"></i></span>'
+    }
+    modal.show();
+}
+
+function validateEmail(email) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    return regex.test(email);
+}
