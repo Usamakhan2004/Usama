@@ -103,9 +103,11 @@ body {
     margin: 0 -10px;
 }
 
+.slick-dots {
+    padding-top: 20px;
+}
 .slick-dots li button:before {
-    font-size: 16px !important; 
-    height: 20px;
+    font-size: 12px !important; 
     color: white !important; 
     opacity: 0.75
   }
