@@ -16,6 +16,8 @@ const contactFormBtn = document.getElementById('contactFormBtn');
 const viewIcons = document.querySelectorAll('.view-icon');
 const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
 const modalImage = document.getElementById('modalImage');
+const zoomIn = document.getElementById('zoom-in');
+const zoomOut = document.getElementById('zoom-out');
 
 const loader = document.getElementById('loader');
 window.addEventListener('load', () => {
@@ -28,7 +30,26 @@ viewIcons.forEach(item => {
         modalImage.src = image;
         imageModal.show();
     })
-})
+});
+
+zoomOut.addEventListener('click', () => {
+
+    const clientWidth = modalImage.clientWidth;
+    if(clientWidth > 400){
+        modalImage.style.width = `${clientWidth - 100}px`
+    }
+
+});
+
+zoomIn.addEventListener('click', () => {
+
+    const clientWidth = modalImage.clientWidth;
+    if(clientWidth < 1266){
+        modalImage.style.width = `${clientWidth + 100}px`
+    }
+    
+});
+
 
 form.addEventListener('submit', async (evt) => {
     if (!form.checkValidity()) {
