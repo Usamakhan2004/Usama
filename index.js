@@ -13,10 +13,22 @@ const modalBody = document.getElementById('modal-body');
 const emailBtnSpinner = document.getElementById('btnSpinner');
 const contactFormBtn = document.getElementById('contactFormBtn');
 
+const viewIcons = document.querySelectorAll('.view-icon');
+const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+const modalImage = document.getElementById('modalImage');
+
 const loader = document.getElementById('loader');
 window.addEventListener('load', () => {
     loader.classList.toggle('d-none', 'd-flex');
 });
+
+viewIcons.forEach(item => {
+    item.addEventListener('click', () => {
+        const image = item.getAttribute('data-image');
+        modalImage.src = image;
+        imageModal.show();
+    })
+})
 
 form.addEventListener('submit', async (evt) => {
     if (!form.checkValidity()) {
